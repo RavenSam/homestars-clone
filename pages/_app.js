@@ -1,7 +1,10 @@
+import { appWithTranslation } from 'next-i18next'
+
+// CSS
+import "typeface-fira-sans";
 import 'tailwindcss/tailwind.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const MyApp = ({ Component, pageProps }) => <Component {...pageProps} />
 
-export default MyApp
+export default appWithTranslation(MyApp)
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="17px" viewBox="0 0 13 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 62 (101010) - https://sketch.com -->
+    <title>1AC432E9-D384-4012-B804-2A1037FA5E73</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="search-mock-up" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage-(1)" transform="translate(-540.000000, -356.000000)">
+            <g id="Hero-Search-box" transform="translate(240.000000, 334.000000)">
+                <g id="Postal-Code-Icon" transform="translate(301.000000, 23.000000)">
+                    <path d="M11,5.25 C11,7.8362069 9.16666667,11.0862069 5.5,15 C1.83333333,11.0862069 0,7.8362069 0,5.25 C0,2.25051724 2.46242857,0 5.5,0 C8.53757143,0 11,2.25051724 11,5.25 Z" id="Stroke-1" stroke="#CFCFCF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <ellipse id="Path" fill="#CFCFCF" cx="5.5" cy="5.25" rx="1.57142857" ry="1.5"></ellipse>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
