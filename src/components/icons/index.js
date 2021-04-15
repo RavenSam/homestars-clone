@@ -1,3 +1,4 @@
+export { default as Message } from './Message'
 export { default as PostalCodeIcon } from './PostalCodeIcon'
 export { default as SearchIcon } from './SearchIcon'
 export { default as Svgexport1 } from './Svgexport1'

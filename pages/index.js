@@ -11,6 +11,7 @@ import Feedbacks from "@components/Feedbacks"
 import Explainer from "@components/Explainer"
 import Essential from "@components/Essential"
 import Category from "@components/Category"
+import Widget from "@components/Sections/Widget"
 
 export default function Home() {
   const { t } = useTranslation("common");
@@ -21,6 +22,8 @@ export default function Home() {
       
       <div className="font-body">
         <Header />
+
+        <Widget/>
 
         <Hero/>
 
