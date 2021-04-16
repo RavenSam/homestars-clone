@@ -6,7 +6,7 @@ export default function BottomPart() {
 
 	return (
 		<div style={{ minHeight: "650px" }} className="flex flex-wrap-reverse">
-			<div className="w-full flex flex-col justify-center p-4 lg:px-20 lg:w-1/2">
+			<div className="w-full flex flex-col justify-center p-4 lg:pr-20 lg:w-1/2">
 				<h2 className="text-xl md:text-3xl font-semibold mb-4">{ t("exb-title") }</h2>
 				<p className="font-semibold text-base md:text-xl">
 					{ t("exb-sub") }

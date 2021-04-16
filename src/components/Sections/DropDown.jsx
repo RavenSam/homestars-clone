@@ -39,7 +39,7 @@ export default function DropDown() {
             {locales.map((lan) => (
               <Link key={lan} href="/" locale={lan}>
                 <a
-                  class="text-gray-800 block px-6 py-2 text-sm hover:bg-gray-200"
+                  className="text-gray-800 block px-6 py-2 text-sm hover:bg-gray-200"
                   role="menuitem"
                 >
                   {lan}

@@ -16,7 +16,7 @@ export default function LeftSide() {
 				<Svgexport1 />
 			</div>
 
-			<ul className="flex items-center">
+			<ul className="hidden md:flex items-center">
 				{leftlinks.map((link) => (
 					<li key={link.label} className="font-semibold">
 						<a className="navlink text-sm lg:text-base p-2 lg:p-4 rounded-sm capitalize" href={link.href}>{link.label}</a>
