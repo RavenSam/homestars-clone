@@ -1,8 +1,8 @@
 {
-	"leftlink1":"browse categories",
+	"leftlink1":"Parcourir les catégories",
 	"leftlink2":"blog",
-	"leftlink3":"write a review",
-	"rightlink1":"log in",
-	"rightlink2":"sign up",
-	"navButton":"are you a home pro"
+	"leftlink3":"Écrire une critique",
+	"rightlink1":"Connexion",
+	"rightlink2":"S'inscrire",
+	"navButton":"es-tu un pro a domicile"
 }
