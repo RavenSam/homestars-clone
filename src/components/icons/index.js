@@ -1,3 +1,4 @@
+export { default as Globe } from './Globe'
 export { default as MenuOutline } from './MenuOutline'
 export { default as Message } from './Message'
 export { default as PostalCodeIcon } from './PostalCodeIcon'

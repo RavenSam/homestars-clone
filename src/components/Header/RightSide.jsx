@@ -1,5 +1,6 @@
 import { useTranslation } from "next-i18next";
 import MobileMenu from "./MobileMenu";
+import DropDown from "@components/Sections/DropDown";
 
 export default function RightSide() {
 	const { t } = useTranslation("header");
@@ -15,7 +16,7 @@ export default function RightSide() {
 				{rightlinks.map((link) => (
 					<li key={link.label} className="font-semibold">
 						<a
-							className="text-sm lg:text-base p-2 lg:p-4 navlink rounded-sm capitalize"
+							className="text-xs lg:text-base p-2 lg:p-4 navlink rounded-sm capitalize"
 							href={link.href}
 						>
 							{link.label}
@@ -23,21 +24,23 @@ export default function RightSide() {
 					</li>
 				))}
 
-				<li className="font-semibold ml-4">
+				<li className="font-semibold">
+					<DropDown className="text-xs lg:text-base p-2 lg:p-4 navlink rounded-sm uppercase font-semibold" />
+				</li>
+
+				<li className="font-semibold lg:ml-4">
 					<a
 						href="#"
 						style={{ background: "#FAD04F" }}
-						className="text-sm lg:text-base p-2 lg:p-4 py-4 text-black opacity-90 hover:opacity-100 rounded-sm capitalize"
+						className="text-xs lg:text-base p-2 lg:p-4 py-4 text-black opacity-90 hover:opacity-100 rounded-sm capitalize"
 					>
 						{t("navButton")}
 					</a>
 				</li>
-
 			</ul>
 			<div className="block md:hidden">
-			<MobileMenu />
+				<MobileMenu />
 			</div>
-
 		</div>
 	);
 }

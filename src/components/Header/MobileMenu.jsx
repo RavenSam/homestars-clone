@@ -2,7 +2,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { MenuOutline, XOutline, Svgexport1 } from "@icons/index";
 import { useTranslation } from "next-i18next";
-
+import DropDown from "@components/Sections/DropDown";
 
 export default function MobileMenu() {
 	const { t } = useTranslation("header");
@@ -14,7 +14,7 @@ export default function MobileMenu() {
 		{ label: t("leftlink3"), href: "#" },
 		{ label: t("rightlink1"), href: "#" },
 		{ label: t("rightlink2"), href: "#" },
-	]
+	];
 
 	const menuClasses = open
 		? " duration-200 ease-out opacity-100 scale-100"
@@ -33,7 +33,6 @@ export default function MobileMenu() {
 				aria-expanded="false"
 			>
 				<MenuOutline />
-				
 			</button>
 
 			{/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -71,17 +70,20 @@ export default function MobileMenu() {
 										</a>
 									</Link>
 								))}
+								<div className="-m-3 p-3 flex items-center rounded-sm hover:bg-gray-100">
+									<DropDown className="ml-3 text-base font-medium text-gray-900 uppercase" />
+								</div>
 							</nav>
 						</div>
 					</div>
 					<div className="py-6 px-5">
 						<a
-						href="#"
-						style={{ background: "#FAD04F" }}
-						className="text-base p-4 py-4 text-black opacity-90 hover:opacity-100 rounded-sm capitalize"
-					>
-						{t("navButton")}
-					</a>
+							href="#"
+							style={{ background: "#FAD04F", width:"fit-content" }}
+							className="text-base p-4 py-4 mx-auto block text-black opacity-90 hover:opacity-100 rounded-sm capitalize"
+						>
+							{t("navButton")}
+						</a>
 					</div>
 				</div>
 			</div>

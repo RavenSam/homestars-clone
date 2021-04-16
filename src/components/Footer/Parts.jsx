@@ -121,7 +121,7 @@ export const Part4 = () => {
 
 			<div className="mt-4">
 
-			<DropDown/>
+			<DropDown className="opacity-80 uppercase mb-4 hover:opacity-100 rounded-sm px-4 border border-gray-300 py-2 text-sm font-medium text-gray-200" />
 			</div>
 
 			<a href="/" className="mt-auto h-8">

@@ -12,14 +12,14 @@ export default function LeftSide() {
 
 	return (
 		<div className="flex items-center">
-			<div className="logo mr-4">
+			<div className="logo lg:mr-4">
 				<Svgexport1 />
 			</div>
 
 			<ul className="hidden md:flex items-center">
 				{leftlinks.map((link) => (
 					<li key={link.label} className="font-semibold">
-						<a className="navlink text-sm lg:text-base p-2 lg:p-4 rounded-sm capitalize" href={link.href}>{link.label}</a>
+						<a className="navlink text-xs lg:text-base p-2 lg:p-4 rounded-sm capitalize" href={link.href}>{link.label}</a>
 					</li>
 				))}
 			</ul>

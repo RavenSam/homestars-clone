@@ -2,14 +2,16 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
+import { Globe } from "@icons/index";
 
-export default function DropDown() {
+
+export default function DropDown({className}) {
   const [show, setShow] = useState(false);
   const { t } = useTranslation("common");
   const { locale, locales } = useRouter();
 
   const showClasses = show
-    ? "transition ease-in duration-75 transform opacity-100 scale-100 "
+    ? "transition ease-in duration-75 transform opacity-100 scale-100 z-10"
     : "transition ease-out duration-100 transform opacity-0 scale-95";
 
   return (
@@ -20,12 +22,11 @@ export default function DropDown() {
             onBlur={() => setShow(false)}
             onClick={() => setShow(!show)}
             type="button"
-            className="inline-flex justify-between opacity-80 hover:opacity-100 rounded-sm px-4 border border-gray-300 py-2 text-sm font-medium text-gray-200 focus:outline-none "
-            id="lan"
+            className={`${className} inline-flex justify-between items-center focus:outline-none`}
             aria-expanded="true"
             aria-haspopup="true"
           >
-            language : {locale}
+            <Globe /> <span className="ml-2"> {locale}</span>
           </button>
         </div>
 
@@ -39,7 +40,7 @@ export default function DropDown() {
             {locales.map((lan) => (
               <Link key={lan} href="/" locale={lan}>
                 <a
-                  className="text-gray-800 block px-6 py-2 text-sm hover:bg-gray-200"
+                  className="text-gray-800 uppercase block px-6 py-2 text-sm hover:bg-gray-200"
                   role="menuitem"
                 >
                   {lan}
